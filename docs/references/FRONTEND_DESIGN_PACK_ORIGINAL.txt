@@ -1,0 +1,49 @@
+📌 PINNED FIRST COMMENT PACK: ৫টি ওপেন-সোর্স ফ্রন্টএন্ড ডিজাইন প্লাগইন + CLAUDE.md আর্কিটেক্ট প্রম্পট
+ভিডিওতে দেখানো ৫টি ফ্রি ওপেন-সোর্স স্কিলের অফিশিয়াল গিটহাব লিংক, ১-ক্লিক টার্মিনাল ইনস্টল কমান্ড এবং রেডিমেড প্রম্পট নিচে পরপর সাজিয়ে দেওয়া হলো:
+১. ৫টি ওপেন-সোর্স স্কিলের অফিশিয়াল GitHub লিংক (5 Official Links)
+Plugin #01 - Awesome DESIGN.md (VoltAgent - 73+ Brand Design Systems): https://github.com/voltagent/awesome-design-md
+Plugin #02 - Impeccable (Paul Bakaus - 24 Slash Commands + 59 Anti-Slop Rules): https://github.com/pbakaus/impeccable (ডকুমেন্টেশন: https://impeccable.style/)
+Plugin #03 - Taste Skill (Leonxlnx - Bold, Motion & Density Sliders): https://github.com/leonxlnx/taste-skill (ওয়েবসাইট: https://www.tasteskill.dev/)
+Plugin #04 - Web Design Guidelines (Vercel Labs - UX & Accessibility Audit): https://github.com/vercel-labs/agent-skills (গাইডলাইন সোর্স: https://github.com/vercel-labs/web-interface-guidelines)
+Plugin #05 - Playwright MCP (Microsoft - Real Browser Screenshot & Visual QA): https://github.com/microsoft/playwright-mcp
+
+২. ১-ক্লিক টার্মিনাল ইনস্টল কমান্ড (CLI Install Commands)
+আপনার প্রজেক্টের টার্মিনালে নিচের কমান্ডগুলো রান করে স্কিলগুলো যুক্ত করে নিন:
+
+# ১. Awesome DESIGN.md থেকে আপনার পছন্দের ব্র্যান্ডের (যেমন Stripe বা Linear) DESIGN.md ফাইলটি প্রজেক্ট রুটে রাখুন
+
+# ২. Impeccable স্কিল ইনস্টল করুন
+npx skills add pbakaus/impeccable
+
+# ৩. Taste Skill ইনস্টল করুন
+npx skills add Leonxlnx/taste-skill
+
+# ৪. Vercel Web Design Guidelines ইনস্টল করুন
+npx skills add https://github.com/vercel-labs/agent-skills --skill web-design-guidelines
+
+# ৫. Microsoft Playwright MCP সার্ভার যুক্ত করুন
+claude mcp add playwright npx '@playwright/mcp@latest'
+
+৩. রেডিমেড Frontend Architect CLAUDE.md প্রম্পট (Copy-Paste Prompt)
+আপনার প্রজেক্টের রুট ফোল্ডারে থাকা CLAUDE.md ফাইলে নিচের প্রম্পটটি কপি-পেস্ট করে রাখুন:
+
+# Frontend Design Engineering Rules (Score 98/100 Pipeline)
+
+1. DESIGN SYSTEM GROUNDING (Awesome DESIGN.md):
+   - Always read `./DESIGN.md` before creating or modifying any UI component.
+   - Strictly enforce the exact hex colors, typography scale, spacing tokens, border radius, and shadow tokens defined in `./DESIGN.md`.
+
+2. ANTI-SLOP GOVERNANCE (Impeccable & Taste-Skill):
+   - Never use generic purple-to-blue gradient text headlines.
+   - Never place emoji icon tiles above feature headings; use clean SVG icons instead.
+   - Run `/impeccable audit` and `/impeccable polish` across COMPONENTS, TYPOGRAPHY, and BACKGROUND layers.
+   - Respect calibrated Taste parameters: BOLD (Design Variance), MOTION (Motion Intensity), and DENSITY (Visual Density).
+
+3. UX & ACCESSIBILITY AUDIT (Vercel Web Design Guidelines):
+   - Every interactive button or close icon must have a minimum hit target of 24x24px (44x44px on mobile touch targets).
+   - Never disable browser zoom (`user-scalable=no` or `maximum-scale=1` is strictly forbidden).
+   - Every async form submission or action button must display an explicit `<Spinner />` loading state while pending.
+
+4. CLOSED-LOOP BROWSER QA (Microsoft Playwright MCP):
+   - After building or updating any page, open the live localhost URL using Playwright MCP.
+   - Click interactive buttons, take a real browser screenshot (`take_screenshot`), verify that no close (`X`) button or CTA overflows its card or overlaps text, and fix all visual bugs before completing the task.
