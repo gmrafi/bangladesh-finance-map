@@ -61,3 +61,7 @@ Changes in chat are **not automatically synced** to GitHub; a repository write a
 ## Current phase
 
 Documentation foundation only. No functional website, database, deployed API or production map is claimed at this stage.
+
+## Frontend design engineering standards
+
+The UI foundation is **Next.js + Tailwind CSS + shadcn/ui**. Before changing any UI, read [DESIGN.md](DESIGN.md), [CLAUDE.md](CLAUDE.md) and [Frontend Design Skills](docs/FRONTEND_DESIGN_SKILLS.md). The complete user-provided five-skill pack is archived [verbatim](docs/references/FRONTEND_DESIGN_PACK_ORIGINAL.txt). Skill installation and browser QA are implementation tasks, not claimed as completed.
