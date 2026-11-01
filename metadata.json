@@ -1,0 +1,9 @@
+{
+  "name": "FinanceMap Bangladesh",
+  "description": "Your Money. Your City. Better Decisions. An all-in-one financial & geographic decision intelligence platform for Bangladesh.",
+  "version": "1.0.0",
+  "permissions": [],
+  "capabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
